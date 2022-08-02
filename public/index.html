@@ -1,89 +1,409 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./code/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://kit.fontawesome.com/18864bb59f.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+</head>
+<body>
+    <!-- Navbar section -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Mario<span>Blog.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#certificate">Certificate</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#relationship">Relationship</a></li>
+                <li><a href="#event">Event & Trips</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- Home section -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Welcome to</div>
+                <div class="text-2">MarioBlog</div>
+                <div class="text-3">I am a <span class="typing"></span></div>
+                <br>
+                <br>
+                <br>
+                <p>Hello, My Name is PHOEUN Mony called Mario. Currently, I am year 4th student Information and Communication Engineering at Institute of Techonology of Cambodia. My HomeTown at Prek thmey village, prek Thmey Commune, Kean Svay District and Kandal Province, I live in Sangakt tuek L'ark Ti #3, Khan Toul Kork, Phnom Penh. My birthday is 24th November 2000. I like coding, internet, network and gaming. Free time I like to go out with friend or play games.</p>
+                <br>
+                <a href="https://web.facebook.com/profile.php?id=100029562860851">Follow Me</a>
+            </div>  
+        </div>
+    </section>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.9.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.9.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.9.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.9.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.9.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.9.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.9.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.9.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.9.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.9.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About Me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="./image/mario-image.jpg">
+                </div>
+                <div class="column right">
+                    <div class="text">
+                        I'm PHOEUN Mony (Mario) I am a <span class="typing-2"></span>
+                    </div>
+                    <p>Hello, My Name is PHOEUN Mony called Mario. Currently, I am year 4th student Information and Communication Engineering at Institute of Techonology of Cambodia. My HomeTown at Prek thmey village, prek Thmey Commune, Kean Svay District and Kandal Province, I live in Sangakt tuek L'ark Ti #, Khan Toul Kork, Phnom Penh. My birthday is 24th November 2000. I like coding, internet, network and gaming. Free time I like to go out with friend or play games. I am friendly and I like to explore new friends.</p>
+                    <a href="https://drive.google.com/file/d/1PNxBj8bVf8QB9RuV_ip4g7raRzuqDSeN/view?usp=sharing">Download My CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <!-- Certificate section -->
+    <section class="certificate" id="certificate">
+        <h2 class="title">My Certificate</h2>
+        <div class="certificate-content">
+            <div class="card">
+                <div class="box">
+                    <img src="./image/2012-2013-Word-Excel-Happy-ChanDara-School.jpg">
+                    <div class="text">Word-Excel at Happy Chandara</div>
+                    <p>This is the certificate of learning word-excel at Happy chandara School since 2012-2013</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="./image/2016-2017-Westtern.jpg">
+                    <div class="text">English at Western International school</div>
+                    <p>This is the certificate of learning English at Western International School since 2016-2017</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="./image/BacII-2018.jpg">
+                    <div class="text">BacII Certificate</div>
+                    <p>This is BacII certificate that I have completed grade 12th since 2018</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="./image/Transcript-2nd-year-ITC.jpg">
+                    <div class="text">Transcript Year 2nd at ITC</div>
+                    <p>This is the Transcript of Information and communication Engineering at ITC since 2019-2020</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+
+
+    <!-- Education section -->
+
+
+    <section class="education" id="education">
+        <div class="max-width">
+            <h2 class="title">My Education</h2>
+            <div class="education-content">
+                <div class="column left">
+                    <div class="text">My School</div>
+                    <br>
+                    <p>  Education is an essential part of our lives. We are nothing without knowledge, and education is what separates us from others. The main step to acquiring education is enrolling oneself in a school. School serves as the first learning place for most of the people. Similarly, it is the first spark in receiving an education. In this essay on my school, I will tell you why I love my school and what my school has taught me.
+                        My school is my second home where I spend most of my time. Above all, it gives me a platform to do better in life and also builds my personality. I feel blessed to study in one of the most prestigious and esteemed schools in the city. In addition, my school has a lot of assets which makes me feel fortunate to be a part of it. Let us look at the essay on my school written below.
+                        .Here is my education place that i have learned from and I am very exciting to share all of you about my school.</p><br>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>2018-now</span>
+                            <span-1>Institute of Technology</span-1>
+                        </div>
+                        <div class="line"></div>
+                        <br>
+                        <p>currently, i am a student of the University of ITC year 4th in IT engineering. School Locate near 5 makara bridge.</p>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>2017-2018</span>
+                            <span-1>Bac II</span-1>
+                        </div>
+                        <div class="line"></div>
+                        <br>
+                        <p>I have finished my grade 12th at Hun Sen SereyPheap. School locate at Takhmoa Town.</p>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>2016-2017</span>
+                            <span-1>Western International</span-1>
+                        </div>
+                        <div class="line"></div>
+                        <br>
+                        <p>I have studied English at level 5B-2 here. School Locate at Takhmoa Town.</p>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>2012-2013</span>
+                            <span-1>Happy Chandara School</span-1>   
+                        </div>
+                        <div class="line"></div>
+                        <br>
+                        <p>I have studied at Happy Chandara School in 2012-2013 in Word-Excel. Locate at Prek Thmey Village.</p>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>2007-2015</span>
+                            <span-1>Prek Thmey School</span-1>
+                        </div>
+                        <div class="line"></div>
+                        <br>
+                        <p>My primary school since i was young 2007-2015. School Locate at Prek Thmey Village.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- relationship section -->
+    <section class="relationship" id="relationship">
+        <div class="max-width">
+            <h2 class="title">My Relationship</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="./image/me.jpg" alt="">
+                        <div class="text">PHOEUN Mony(Me)</div>
+                        <p>Birthday: <span>24 November 2000</span></p>
+                        <p>Mario 22 years old.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="./image/dad.jpg" alt="">
+                        <div class="text">Eam Navy</div>
+                        <p>Contact: +855 88 2939 249</p>
+                        <p>He is my Dad.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="./image/mymum.jpg" alt="">
+                        <div class="text">Seng Siem</div>
+                        <p>Contact: +855 70 930 965</p>
+                        <p>She is my Mum</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="./image/big-sister.jpg" alt="">
+                        <div class="text">PHOEUN SreyNak</div>
+                        <p>Contact: +855 96 790 1685</p>
+                        <p>she is my Older-Sister</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="./image/brother.jpg" alt="">
+                        <div class="text">PHOEUN Chamroeun</div>
+                        <p>Contact: +855 70 738 817</p>
+                        <p>He is my Older-Brother</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="./image/youngest-sister.jpg" alt="">
+                        <div class="text">PHOEUN Srey Neath</div>
+                        <p>Contact: +855 93 955 080</p>
+                        <p>She is my youngest-sister.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="./image/nephew.jpg" alt="">
+                        <div class="text">Bo VirakBoth</div>
+                        <p>Birthday: 2 March 2015</p>
+                        <p>He is my nephew.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="./image/nice.jpg" alt="">
+                        <div class="text">Bo Srey Naeth</div>
+                        <p>Birthday: 2 March 2017</p>
+                        <p>She is my niece.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="./image/me-junat.jpg" alt="">
+                        <div class="text">PHOM Chounat</div>
+                        <p>Contact: +855 70 703 278</p>
+                        <p>He is my friends</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="./image/yean.jpg" alt="">
+                        <div class="text">Lin HouyYean</div>
+                        <p>Contact: +855 16 592 238</p>
+                        <p>She is my friends</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="./image/khim.jpg" alt="">
+                        <div class="text">Nhaem Nakhim</div>
+                        <p>Contact: +855 71 975 6235</p>
+                        <p>He is my uncle and also my friend</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="./image/dara.jpg" alt="">
+                        <div class="text">PHORN Dara</div>
+                        <p>Contact: +855 96 883 5147</p>
+                        <p>he is my friends</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="./image/dary.jpg" alt="">
+                        <div class="text">ART Dary</div>
+                        <p>Contact: +855 81 635 716</p>
+                        <p>She is my friends</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="./image/smey.jpg" alt="">
+                        <div class="text">Tol ChanRakSmey</div>
+                        <p>Contact: +855 96 734 7703</p>
+                        <p>she is my friends</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event section -->
+    <section class="event" id="event">
+        <div class="max-width">
+            <h2 class="title">My Activity</h2>
+            <div class="event-content">
+                <div class="card">
+                    <div class="box">
+                        <img src="./image/me-luy.jpg">
+                        <div class="text">KOMPONG CHAM PROVINCE</div>
+                        <p>Date: 2 February 2022</p>
+                        <p>This is my trip with my bro.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="./image/mario-team.jpg">
+                        <div class="text">KEP PROVINCE</div>
+                        <p>Date: 6 June 2022</p>
+                        <p>This is my trip with my friends</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Conatct Me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div><br>
+                    <p>Hello, My Name is PHOEUN Mony called Mario. Currently, I am year 4th student Information and Communication Engineering at Institute of Techonology of Cambodia. My HomeTown at Prek thmey village, prek Thmey Commune, Kean Svay District and Kandal Province, I live in Sangakt tuek L'ark Ti #3, Khan Toul Kork, Phnom Penh. My birthday is 24th November 2000. I like coding, internet, network and gaming. Free time I like to go out with friend or play games. I am friendly and I like to explore new friends.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">PHOEUN Mony (Mario)</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <i class="fas fa-location-arrow"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Tuek L'ark Ti #3, Khan Toul Kork, Phnom Penh</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">phoeunmony12@gmail.com</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Phone</div>
+                                <div class="sub-title">(+855) 69444653</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <i class="fas fa-globe"></i>
+                            <div class="info">
+                                <div class="head">Website</div>
+                                <div class="sub-title"><a href="https://marioportfolio-0775.web.app/">https://marioportfolio-0775.web.app/</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message Me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div> 
+                        <div class="field">
+                                <input type="text" placeholder="Purpose" required>
+                            </div>
+                            <div class="field textarea">
+                                <textarea cols="30" rows="10" placeholder="Tell me!" required></textarea>
+                            </div>
+                            <div class="button">
+                                <button type="submit">Send Message</button>
+                            </div>    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer">
+        <span>Made by <a href="#">Mario</a> 2022-2023. | Thanks you!  <span class="fas fa-handshake"></span></span>
+    </footer>
+</body>
+
+
+
+
+    <script src="./code/script.js"></script>
+</body>
 </html>
